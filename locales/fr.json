@@ -8,21 +8,21 @@
         "start-quizz": "Commencer le questionnaire"
     },
     "quizz": {
-        "intro-text": "What are the best keyword to describe my citizen science-based publication?",
+        "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
         "one": {
-            "question": "Have you already added \"Citizen Science\" as a keyword?",
-            "yes": "Yes",
-            "no": "No"
+            "question": "Avez-vous déjà ajouté le mot-clef \"Citizen Science\" ?",
+            "yes": "Oui",
+            "no": "Non"
         },
         "two": {
-            "question": "Have you already added other Citizen Science related keywords?",
-            "yes": "Yes",
-            "no": "No"
+            "question": "Avous-vous ajouté d'autres mots-clefs en rapport avec la science citoyenne ?",
+            "yes": "Oui",
+            "no": "Non"
         },
         "three": {
-            "question": "Let's find more! Do you work with specific groups or communities?",
-            "yes": "Yes",
-            "no": "No"
+            "question": "Continuons ! Travaillez-vous avec des groupes ou des communautés spécifiques ?",
+            "yes": "Oui",
+            "no": "Non"
         }
     }
 }
