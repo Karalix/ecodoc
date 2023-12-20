@@ -6,10 +6,13 @@ const otherLocale = computed(() => {
     return locales.value.find(l => l.code !== locale.value)
 })
 
+const keywords = ref([])
+
 </script>
 
 <template>
     <div class="flex flex-row min-h-screen">
+        <div class="absolute">DEBUG : {{ keywords.join(', ') }}</div>
         <div class=" px-8 py-4 lg:px-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2 bg-gray-50">
             <div class="flex flex-row justify-between">
                 <div class="flex flex-row space-x-2.5">
@@ -25,6 +28,7 @@ const otherLocale = computed(() => {
                     name: 'slide-fade'
                 }"
                 :page-key="route => route.fullPath"
+                @keyword="keyword => keywords.push(keyword)"
                 @progress="value => progress = value">
             </NuxtPage>
         </div>

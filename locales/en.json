@@ -10,7 +10,7 @@
     "quizz": {
         "intro-text": "What are the best keyword to describe my citizen science-based publication?",
         "one": {
-            "question": "Have you already added \"Citizen Science\" as a keyword?",
+            "question": "Did you already add \"Citizen Science\" as a keyword?",
             "yes": "Yes",
             "no": "No"
         },

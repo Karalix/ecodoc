@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 const emit = defineEmits(['progress', 'keyword'])
 
 onMounted(() => {
-    emit('progress', 3)
+    emit('progress', 4)
 });
 </script>
 

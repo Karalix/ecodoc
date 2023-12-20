@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-const emit = defineEmits(['progress'])
+const emit = defineEmits(['progress', 'keyword'])
 
 onMounted(() => {
     emit('progress', 2)
@@ -9,8 +9,10 @@ onMounted(() => {
 
 <template>
     <div class="h-full flex flex-col justify-between">
-        <div>
+        <div class="flex flex-col space-y-4">
             <p class="font-bold">{{ $t('quizz.two.question') }}</p>
+            <SingleAnswerButton toPath="/quizz/three" :label="$t('quizz.one.yes')"></SingleAnswerButton>
+            <SingleAnswerButton toPath="/quizz/three" :label="$t('quizz.one.no')"></SingleAnswerButton>
         </div>
         <div class="flex flex-row-reverse justify-between w-full">
             <NuxtLink to="/quizz/three" class="btn">{{ $t('misc.next') }}</NuxtLink>
