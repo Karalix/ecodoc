@@ -8,10 +8,15 @@ const otherLocale = computed(() => {
 
 const keywords = ref([])
 
+const addKeyword = (keyword) => {
+    if (keywords.value.includes(keyword)) return
+    keywords.value.push(keyword)
+}
+
 </script>
 
 <template>
-    <div class="flex flex-row min-h-screen">
+    <div class="flex flex-row h-full">
         <div class="absolute">DEBUG : {{ keywords.join(', ') }}</div>
         <div class=" px-8 py-4 lg:px-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2 bg-gray-50">
             <div class="flex flex-row justify-between">
@@ -19,7 +24,7 @@ const keywords = ref([])
                     <NuxtImg src="https://picsum.photos/150/150" class="w-12 h-12"></NuxtImg>
                     <h1 class="text-3xl font-bold text-center">Citizen Science</h1>
                 </div>
-                <div class="btn" @click="setLocale(otherLocale.code)">{{ otherLocale.code === 'fr' ? '🇫🇷' : '🇬🇧' }} {{ otherLocale.name }}</div>
+                <div class="btn" @click="setLocale(otherLocale.code)">{{ otherLocale.name }}</div>
             </div>
             <ProgressBar :progress="progress" :total="6" ></ProgressBar>
             <p class="text-gray-300">{{ $t('quizz.intro-text') }}</p>
@@ -28,7 +33,7 @@ const keywords = ref([])
                     name: 'slide-fade'
                 }"
                 :page-key="route => route.fullPath"
-                @keyword="keyword => keywords.push(keyword)"
+                @keyword="addKeyword"
                 @progress="value => progress = value">
             </NuxtPage>
         </div>
@@ -39,8 +44,15 @@ const keywords = ref([])
 </template>
 
 <style>
+html,body, #__nuxt, #__layout{
+  min-height:100%!important;
+  min-width: 100%!important;
+  height:100%!important;
+  width: 100%!important;
+}
+
 .slide-fade-enter-active {
-  transition: all 0.4s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .slide-fade-enter-from,
