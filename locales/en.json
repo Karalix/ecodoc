@@ -1,0 +1,28 @@
+{
+    "misc": {
+        "of": "of",
+        "back": "Back",
+        "next": "Next"
+    },
+    "home": {
+        "start-quizz": "Start the quizz"
+    },
+    "quizz": {
+        "intro-text": "What are the best keyword to describe my citizen science-based publication?",
+        "one": {
+            "question": "Have you already added \"Citizen Science\" as a keyword?",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "two": {
+            "question": "Have you already added other Citizen Science related keywords?",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "three": {
+            "question": "Let's find more! Do you work with specific groups or communities?",
+            "yes": "Yes",
+            "no": "No"
+        }
+    }
+}
