@@ -5,7 +5,11 @@
         "next": "Suivant"
     },
     "home": {
-        "start-quizz": "Commencer le questionnaire"
+        "start-quizz": "Générateur de mots clés",
+        "menu": "Menu",
+        "partners": "Partenaires",
+        "map": "Arborescence",
+        "partners-text": "ECODOC est rendu possible par les multiples partenaires académiques, institutionnels et culturels impliqués dans le projet."
     },
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",

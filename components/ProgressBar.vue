@@ -26,10 +26,10 @@ const segments = computed(() => {
 <template>
     <div class="flex flex-col w-full space-y-2">
         <div class="flex flex-row space-x-2 w-full justify-between">
-            <div v-for="seg of segments" :key="seg.index" class="grow">
-                <div class="h-1.5" :class="{
-                    'bg-black': seg.isDone,
-                    'bg-gray-300': !seg.isDone
+            <div v-for="seg of segments" :key="seg.index" class="grow rounded">
+                <div class="h-1.5 rounded" :class="{
+                    'bg-primary': seg.isDone,
+                    'bg-grey': !seg.isDone
                 }"></div>
             </div>
         </div>

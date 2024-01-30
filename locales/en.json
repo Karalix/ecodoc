@@ -5,7 +5,11 @@
         "next": "Next"
     },
     "home": {
-        "start-quizz": "Start the quizz"
+        "start-quizz": "Keywords generator",
+        "menu": "Menu",
+        "partners": "Partners",
+        "map": "Map",
+        "partners-text": "ECODOC is made possible thanks to the multiple academic, institutional, and cultural partners involved in the project."
     },
     "quizz": {
         "intro-text": "What are the best keyword to describe my citizen science-based publication?",

@@ -19,7 +19,7 @@ defineEmits(['keyword'])
 
 <template>
     <NuxtLink class="w-4/5" :to="toPath" @click.native="value ? $emit('keyword') : ''">
-        <div class="w-full p-4 flex flex-row space-x-2 outline outline-1 outline-gray-300 items-center hover:bg-gray-100 hover:drop-shadow-md transition-all">
+        <div class="w-full p-4 flex flex-row space-x-2  text-grey hover:text-primary outline rounded outline-1 hover:outline-primary outline-grey items-center">
             <NuxtImg class="w-12 h-12" src="https://picsum.photos/150/150"></NuxtImg>
             <div class="grow h-fit">{{ label }}</div>
             <NuxtImg class="w-12 h-12" src="https://picsum.photos/150/150"></NuxtImg>

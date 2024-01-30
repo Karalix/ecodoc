@@ -16,7 +16,7 @@ onMounted(() => {
         </div>
         <div class="flex flex-row-reverse justify-between w-full">
             <NuxtLink to="/quizz/three" class="btn">{{ $t('misc.next') }}</NuxtLink>
-            <NuxtLink to="/quizz/one" class="btn btn-outline">{{ $t('misc.back') }}</NuxtLink>
+            <NuxtLink to="/quizz/one" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</NuxtLink>
         </div>
     </div>
 </template>
