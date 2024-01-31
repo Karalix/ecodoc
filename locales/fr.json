@@ -9,7 +9,9 @@
         "menu": "Menu",
         "partners": "Partenaires",
         "map": "Arborescence",
-        "partners-text": "ECODOC est rendu possible par les multiples partenaires académiques, institutionnels et culturels impliqués dans le projet."
+        "partners-text": "ECODOC est rendu possible par les multiples partenaires académiques, institutionnels et culturels impliqués dans le projet.",
+        "anr-financing": "Ce projet a bénéficié d'une aide de l'État gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'Avenir portant la référence ANR-20-IDES-0001",
+        "contact-us": "Nous contacter"
     },
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",

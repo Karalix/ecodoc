@@ -7,6 +7,9 @@ module.exports = {
                 "primary-light": "#F5FAF8FF",
                 "primary-medium": "#3F7567FF",
                 grey: "#D1C7BCFF"
+            },
+            fontFamily: {
+                sans: ['Epilogue', 'sans-serif']
             }
         }
     }

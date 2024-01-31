@@ -9,7 +9,9 @@
         "menu": "Menu",
         "partners": "Partners",
         "map": "Map",
-        "partners-text": "ECODOC is made possible thanks to the multiple academic, institutional, and cultural partners involved in the project."
+        "partners-text": "ECODOC is made possible thanks to the multiple academic, institutional, and cultural partners involved in the project.",
+        "anr-financing": "This project has received funding from the French National Research Agency (ANR) as part of the \"Investissements d’avenir\" program, reference ANR-20-IDES-0001.",
+        "contact-us": "Contact us"
     },
     "quizz": {
         "intro-text": "What are the best keyword to describe my citizen science-based publication?",
