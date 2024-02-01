@@ -5,6 +5,9 @@
         "next": "Suivant"
     },
     "home": {
+        "title": "Générateur de mots-clés",
+        "intro-text": "Améliorer, référencer vos projets et articles correctement grâce à notre outil de décision.",
+        "cta": "C'est parti !",
         "start-quizz": "Générateur de mots clés",
         "menu": "Menu",
         "partners": "Partenaires",

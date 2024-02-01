@@ -5,6 +5,9 @@
         "next": "Next"
     },
     "home": {
+        "title": "Keywords generator",
+        "intro-text": "Improve, reference your projects and articles correctly thanks to our decision-making tool.",
+        "cta": "Let's go!",
         "start-quizz": "Keywords generator",
         "menu": "Menu",
         "partners": "Partners",
