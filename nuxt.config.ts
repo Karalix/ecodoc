@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
     '@nuxt/image',
+    'nuxt-svgo'
   ],
   i18n: {
     strategy: 'no_prefix',

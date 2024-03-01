@@ -1,5 +1,7 @@
 <script setup>
 import { onMounted } from 'vue'
+import ArrowRight from '~/assets/arrow-r.svg'
+
 const emit = defineEmits(['progress', 'keyword'])
 
 onMounted(() => {
@@ -15,8 +17,13 @@ onMounted(() => {
             <SingleAnswerButton toPath="/quizz/two" :label="$t('quizz.one.no')" @keyword="$emit('keyword', 'citizen science')" :value="'citizen science'"></SingleAnswerButton>
         </div>
         <div class="flex flex-row-reverse justify-between w-full">
-            <NuxtLink to="/quizz/two" class="btn">{{ $t('misc.next') }}</NuxtLink>
-            <NuxtLink to="/" class="btn bg-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</NuxtLink>
+            <NuxtLink to="/quizz/two" class="btn">
+                {{ $t('misc.next') }}
+            </NuxtLink>
+            <NuxtLink to="/" class="btn bg-primary-light text-primary-medium text-base font-normal">
+                <ArrowRight class="h-3 rotate-180" :fontControlled="false"/>
+                {{ $t('misc.back') }}
+            </NuxtLink>
         </div>
     </div>
 </template>
