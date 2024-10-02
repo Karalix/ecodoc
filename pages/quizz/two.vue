@@ -14,8 +14,7 @@ onMounted(() => {
             <SingleAnswerButton toPath="/quizz/three" :label="$t('quizz.one.yes')"></SingleAnswerButton>
             <SingleAnswerButton toPath="/quizz/three" :label="$t('quizz.one.no')"></SingleAnswerButton>
         </div>
-        <div class="flex flex-row-reverse justify-between w-full">
-            <NuxtLink to="/quizz/three" class="btn">{{ $t('misc.next') }}</NuxtLink>
+        <div class="flex flex-row justify-between w-full">
             <NuxtLink to="/quizz/one" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</NuxtLink>
         </div>
     </div>

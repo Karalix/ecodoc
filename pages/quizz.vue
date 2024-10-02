@@ -21,6 +21,7 @@ const addKeyword = (keyword) => {
                     name: 'slide-fade'
                 }"
                 :page-key="route => route.fullPath"
+                :keywords="keywords"
                 @keyword="addKeyword"
                 @progress="value => progress = value">
             </NuxtPage>

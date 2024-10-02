@@ -32,6 +32,10 @@
             "question": "Continuons ! Travaillez-vous avec des groupes ou des communautés spécifiques ?",
             "yes": "Oui",
             "no": "Non"
+        },
+        "result": {
+            "label": "Recommandation de la liste globale de mots-clés de connaissances expérientielles",
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
         }
     }
 }

@@ -32,6 +32,10 @@
             "question": "Let's find more! Do you work with specific groups or communities?",
             "yes": "Yes",
             "no": "No"
+        },
+        "result": {
+            "label": "Recommandation of global keywords list experiental knowledge",
+            "sub-label": "Click on the keywords that interest you to add to your publication"
         }
     }
 }
