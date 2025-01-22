@@ -30,12 +30,16 @@ onMounted(() => {
             <p class="font-bold text-2xl">{{ $t('quizz.result.label') }}</p>
             <p class="font-bold text-base">{{ $t('quizz.result.sub-label') }}</p>
             <div class="flex flex-row flex-wrap space-x-2">
-                <div 
-                    v-for="keyw of keywords"
-                    class="rounded border py-2 px-3 mt-3 cursor-pointer border-grey-200"
-                    :class="{'border-primary': chosenKeywords.includes(keyw)}"
-                    @click="addRemoveChosenKeyword(keyw)">
-                    {{ keyw }}
+                <div    v-for="keyw of keywords"
+                        :key="keyw"
+                        class="tooltip"
+                        :data-tip="$t(`dict.def.${keyw}`)">
+                    <div 
+                        class="rounded border py-2 px-3 mt-3 cursor-pointer border-grey-200"
+                        :class="{'border-primary': chosenKeywords.includes(keyw)}"
+                        @click="addRemoveChosenKeyword(keyw)">
+                        {{ $t(`dict.ln.${keyw}`) }}
+                    </div>
                 </div>
             </div>
         </div>

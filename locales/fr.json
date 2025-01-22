@@ -19,23 +19,49 @@
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
         "one": {
-            "question": "Avez-vous déjà ajouté le mot-clef \"Citizen Science\" ?",
+            "question": "Dans un premier temps, avez vous ajouté le terme “citizen science” à vos mots-clés ?",
             "yes": "Oui",
             "no": "Non"
         },
         "two": {
-            "question": "Avous-vous ajouté d'autres mots-clefs en rapport avec la science citoyenne ?",
-            "yes": "Oui",
-            "no": "Non"
+            "question": "Travaillez-vous avec des groupes ou communautés spécifiques ?",
+            "yes": "Oui : groupe d’habitants spécifiés",
+            "no": "Non : groupe d'habitants non spécifiés"
         },
         "three": {
-            "question": "Continuons ! Travaillez-vous avec des groupes ou des communautés spécifiques ?",
-            "yes": "Oui",
-            "no": "Non"
+            "question": "Soyons plus spécifique : Quel est la nature du groupe ?",
+            "partners": "Partenaires experts / amateurs spécialisés / professionnels",
+            "patients": "Patients",
+            "citizens": "habitants légalement et administrativement reconnus",
+            "indigenous": "Indigènes, communautés, autochtones, etc.",
+            "others": "Autres groupes : famille, jeunes, habitants d’un quartier"
+        },
+        "four": {
+            "question": "Quel est le cadre dans lequel ces habitants évoluent ?",
+            "monitoring": "Cadre organisationnel : organisme, sciences de l’éducation, sciences sociales",
+            "research-action-participatory": "Cadre écologique : observation des espèces..."
         },
         "result": {
             "label": "Recommandation de la liste globale de mots-clés de connaissances expérientielles",
             "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
+        }
+    },
+    "dict": {
+        "ln": {
+            "citizen-science": "Citizen Science",
+            "community": "Community",
+            "citizen": "Citizen",
+            "community-to-precise": "Community to precise",
+            "monitoring": "Monitoring",
+            "research-action-participatory": "Recherche action participative"
+        },
+        "def": {
+            "citizen-science": "Usage très générique avec la notion de citoyenneté utilisée comme marqueur de la science participative, toute méthode, discipline et contexte confondu.",
+            "community": "Prout",
+            "citizen": "Prout",
+            "community-to-precise": "individuel(s) qui joue(nt) un rôle actif dans la vie d'une communauté",
+            "monitoring": "contrôler, évaluer et d'examiner les données scientifiques générées au cours d'une étude.",
+            "research-action-participatory": "Approches de la recherche dans et avec les communautés qui mettent l'accent sur leur participation au processus d'étude d'un problème ou de réponse à une question pour d'entreprendre des actions pour y remédier."
         }
     }
 }
