@@ -4,6 +4,15 @@ const progress = ref(0)
 const keywords = ref([])
 
 const addKeyword = (keyword) => {
+    console.log('addKeyword', keyword)
+    if (Array.isArray(keyword)) {
+        console.log('array')
+        keyword.forEach(k => {
+            if (keywords.value.includes(k)) return
+            keywords.value.push(k)
+        })
+        return
+    }
     if (keywords.value.includes(keyword)) return
     keywords.value.push(keyword)
 }
@@ -11,7 +20,7 @@ const addKeyword = (keyword) => {
 </script>
 
 <template>
-    <div class="flex flex-row h-[calc(100svh-128px)]">
+    <div class="flex flex-row min-h-[calc(100svh-128px)]">
         <div class="absolute text-grey">DEBUG : {{ keywords.join(', ') }}</div>
         <div class=" px-8 py-4 lg:pl-28 lg:pr-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2">
             <ProgressBar :progress="progress" :total="6" ></ProgressBar>

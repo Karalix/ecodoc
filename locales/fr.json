@@ -19,14 +19,23 @@
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
         "one": {
-            "question": "Dans un premier temps, avez vous ajouté le terme “citizen science” à vos mots-clés ?",
+            "question": "Avez-vous utilisé le terme « Citizen Science » ?",
             "yes": "Oui",
             "no": "Non"
         },
+        "result": {
+            "label": "CITIZEN SCIENCE",
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
+        },
         "two": {
-            "question": "Travaillez-vous avec des groupes ou communautés spécifiques ?",
-            "yes": "Oui : groupe d’habitants spécifiés",
-            "no": "Non : groupe d'habitants non spécifiés"
+            "question": "Quel engagement souhaitez-vous mettre en avant ?",
+            "researchers-to-science": "Je souhaite mettre en avant l'engagement des chercheurs envers une science intégrée dans la société, susceptible de participer à ses transformations.",
+            "researchers-to-participants": "Je souhaite mettre en avant l'engagement des chercheur.ses envers les participant.es, qui gagnent en encapacitation à prendre part à la production de savoirs.",
+            "participants-to-society": "Je souhaite mettre en avant l'engagement des participants envers la transformation de la société via la production de savoirs."
+        },
+        "result-two": {
+            "label": "ENGAGEMENT",
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
         },
         "three": {
             "question": "Soyons plus spécifique : Quel est la nature du groupe ?",
@@ -40,15 +49,15 @@
             "question": "Quel est le cadre dans lequel ces habitants évoluent ?",
             "monitoring": "Cadre organisationnel : organisme, sciences de l’éducation, sciences sociales",
             "research-action-participatory": "Cadre écologique : observation des espèces..."
-        },
-        "result": {
-            "label": "Recommandation de la liste globale de mots-clés de connaissances expérientielles",
-            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
         }
     },
     "dict": {
         "ln": {
             "citizen-science": "Citizen Science",
+            "participatory-science": "Participatory Science",
+            "participatory-research": "Participatory Research",
+            "research-participation": "Research Participation",
+            "participatory-research-methods": "Participatory Research Methods",
             "community": "Community",
             "citizen": "Citizen",
             "community-to-precise": "Community to precise",
@@ -56,7 +65,11 @@
             "research-action-participatory": "Recherche action participative"
         },
         "def": {
-            "citizen-science": "Usage très générique avec la notion de citoyenneté utilisée comme marqueur de la science participative, toute méthode, discipline et contexte confondu.",
+            "citizen-science": "Le terme « Citizen Science est utilisé comme marqueur de la science participative, pour toute méthode, discipline et contexte confondus. Le terme \"Citizen\" est entendu comme terme générique : toute personne souhaitant s'impliquer pour la cité. La science citoyenne est donc une science qui participe non seulement de la cité mais aussi intègre dans son processus les voix de tous et toutes. Par ailleurs, ce terme est aussi celui qui a été retenu internationalement pour parler des sciences et recherches participatives en anglais. De fait, les articles qui utilisent le terme Citizen Science dans leur indexation sont plus visibles et plus cités. A noter que le terme \"Citizen\" en anglais tend à recouvrir le groupe des habitants légaux, ceux et celles qui ont des papiers et une reconnaissance administrative. Néanmoins, ce n'est jamais sur ce sens là qu'un projet de citizen science se construit. Vous pouvez donc utiliser des dérivés de Citizen science sans crainte de voir votre projet réduit à ce type de public.",
+            "participatory-science": "Qu'il s'agisse de l'engagement des chercheur-euses ou des participant.es, le terme \"Participation\" et ses dérivés \"Participative\", \"Participatory\" expriment la dimension politique de cette méthode. Le terme s'inscrit dans une tradition philosophique et politique qui démarre avec John Dewey et qui a eu un impact dans de nombreux champs, tels que les gouvernements locaux, les débats éthiques, le développement du web, etc.",
+            "participatory-research": "Qu'il s'agisse de l'engagement des chercheur-euses ou des participant.es, le terme \"Participation\" et ses dérivés \"Participative\", \"Participatory\" expriment la dimension politique de cette méthode. Le terme s'inscrit dans une tradition philosophique et politique qui démarre avec John Dewey et qui a eu un impact dans de nombreux champs, tels que les gouvernements locaux, les débats éthiques, le développement du web, etc.",
+            "research-participation": "Qu'il s'agisse de l'engagement des chercheur-euses ou des participant.es, le terme \"Participation\" et ses dérivés \"Participative\", \"Participatory\" expriment la dimension politique de cette méthode. Le terme s'inscrit dans une tradition philosophique et politique qui démarre avec John Dewey et qui a eu un impact dans de nombreux champs, tels que les gouvernements locaux, les débats éthiques, le développement du web, etc.",
+            "participatory-research-methods": "Qu'il s'agisse de l'engagement des chercheur-euses ou des participant.es, le terme \"Participation\" et ses dérivés \"Participative\", \"Participatory\" expriment la dimension politique de cette méthode. Le terme s'inscrit dans une tradition philosophique et politique qui démarre avec John Dewey et qui a eu un impact dans de nombreux champs, tels que les gouvernements locaux, les débats éthiques, le développement du web, etc.",
             "community": "Prout",
             "citizen": "Prout",
             "community-to-precise": "individuel(s) qui joue(nt) un rôle actif dans la vie d'une communauté",

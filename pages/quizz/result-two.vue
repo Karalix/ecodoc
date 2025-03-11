@@ -27,8 +27,8 @@ onMounted(() => {
 <template>
     <div class="h-full flex flex-col justify-between">
         <div class="flex flex-col space-y-4">
-            <p class="font-bold text-2xl">{{ $t('quizz.result.label') }}</p>
-            <p class="font-bold text-base">{{ $t('quizz.result.sub-label') }}</p>
+            <p class="font-bold text-2xl">{{ $t('quizz.result-two.label') }}</p>
+            <p class="font-bold text-base">{{ $t('quizz.result-two.sub-label') }}</p>
             <div class="flex flex-row flex-wrap space-x-2">
                 <div    v-for="keyw of keywords"
                         :key="keyw"
@@ -44,8 +44,8 @@ onMounted(() => {
             </div>
         </div>
         <div class="flex flex-row-reverse justify-between w-full">
-            <NuxtLink to="/quizz/four" class="btn">{{ $t('misc.next') }}</NuxtLink>
-            <NuxtLink to="/quizz/four" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</NuxtLink>
+            <NuxtLink to="/quizz/three" class="btn">{{ $t('misc.next') }}</NuxtLink>
+            <NuxtLink to="/quizz/two" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</NuxtLink>
         </div>
     </div>
 </template>
