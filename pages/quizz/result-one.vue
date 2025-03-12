@@ -6,6 +6,10 @@ defineProps({
     keywords: {
         type: Array,
         required: true
+    },
+    currentkeywords: {
+        type: Array,
+        required: true
     }
 })
 
@@ -20,7 +24,7 @@ const addRemoveChosenKeyword = (keyword) => {
 }
 
 onMounted(() => {
-    emit('progress', 4)
+    emit('progress', 1)
 });
 </script>
 
@@ -29,10 +33,10 @@ onMounted(() => {
         <div class="flex flex-col space-y-4">
             <p class="font-bold text-2xl">{{ $t('quizz.result.label') }}</p>
             <p class="font-bold text-base">{{ $t('quizz.result.sub-label') }}</p>
-            <div class="flex flex-row flex-wrap space-x-2">
-                <div    v-for="keyw of keywords"
+            <div class="flex flex-row flex-wrap">
+                <div    v-for="keyw of currentkeywords"
                         :key="keyw"
-                        class="tooltip"
+                        class="tooltip mr-2"
                         :data-tip="$t(`dict.def.${keyw}`)">
                     <div 
                         class="rounded border py-2 px-3 mt-3 cursor-pointer border-grey-200"
