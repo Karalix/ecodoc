@@ -47,7 +47,7 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-        <div class="flex flex-row-reverse justify-between w-full">
+        <div class="flex flex-row-reverse justify-between w-full mt-4">
             <NuxtLink to="/" class="btn"><!--{{ $t('misc.next') }}-->Le reste est pas encore développé</NuxtLink>
             <a @click="$router.back()" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</a>
         </div>

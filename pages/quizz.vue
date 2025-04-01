@@ -57,9 +57,9 @@ const addKeyword = (keyword) => {
 </script>
 
 <template>
-    <div class="flex flex-row min-h-[calc(100svh-128px)]">
+    <div class="flex flex-row min-h-[calc(100svh-128px)] bg-[#F8F9F9FF]">
         <!--<div class="absolute text-grey">DEBUG : {{ keywords.join(', ') }}</div>-->
-        <div class=" px-8 py-4 lg:pl-28 lg:pr-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2">
+        <div class=" px-8 py-4 lg:pl-28 lg:pr-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2 bg-white">
             <ProgressBar :progress="progress" :total="5" ></ProgressBar>
             <p class="text-gray-300">{{ $t('quizz.intro-text') }}</p>
             <NuxtPage
@@ -73,8 +73,8 @@ const addKeyword = (keyword) => {
                 @progress="value => progress = value">
             </NuxtPage>
         </div>
-        <div class="w-1/2 h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
-            <NuxtImg src="https://picsum.photos/200/300"></NuxtImg>
+        <div class="w-1/2 h-full min-h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
+            <NuxtImg src="/Selection.png"></NuxtImg>
         </div>
     </div>
 </template>

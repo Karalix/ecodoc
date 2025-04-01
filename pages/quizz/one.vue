@@ -16,7 +16,7 @@ onMounted(() => {
             <SingleAnswerButton toPath="/quizz/result-one" :label="$t('quizz.one.yes')" @keyword="$emit('keyword', 'citizen-science')" :value="'citizen-science'"></SingleAnswerButton>
             <SingleAnswerButton toPath="/quizz/result-one" :label="$t('quizz.one.no')" @keyword="$emit('keyword', 'citizen-science')" :value="'citizen-science'"></SingleAnswerButton>
         </div>
-        <div class="flex flex-row justify-between w-full">
+        <div class="flex flex-row justify-between w-full mt-4">
             <NuxtLink to="/" class="btn bg-primary-light text-primary-medium text-base font-normal">
                 <ArrowRight class="h-3 rotate-180" :fontControlled="false"/>
                 {{ $t('misc.back') }}

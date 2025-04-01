@@ -52,12 +52,19 @@
             "partners": "Partenaires expert·es ou des professionnel·les",
             "patients": "Patient·es dans un cadre de recherches liées à la santé ou au soin en général",
             "indigenous": "Communautés autochtones",
+            "volunteer": "Si les personnes n'ont pas été choisies ou co-optées",
             "others": "Un groupe spécifique hors patient et autochtones"
         },
         "three-bis": {
             "question": "",
             "individual-action": "Mon projet participatif requiert une action individuelle de chaque participant·e. Chacun·e travaille individuellement au projet global et les interactions au sein du groupe sont faibles ou du moins le projet n'est pas axé sur les interactions susceptibles d'advenir.",
-            "collective-action": "Mon projet participatif demande la collaboration d'un groupe de participant·es qui va être amené à travailler ensemble. Leur action est collective et les interactions au sein du groupe sont fortes."
+            "collective-action": "Mon projet participatif demande la collaboration d'un groupe de participant·es qui va être amené à travailler ensemble. Leur action est collective et les interactions au sein du groupe sont fortes.",
+            "volunteer": "Si les personnes n'ont pas été choisies ou co-optées"
+        },
+        "partners": {
+            "question": "",
+            "ecology": "Mon projet se fait dans le cadre d'études écologiques, de type observation des espèces ou suivi environnemental",
+            "action": "Mon projet se fait dans le cadre d'études en sciences sociales et humaines"
         },
         "four": {
             "question": "Quel est le cadre dans lequel ces habitants évoluent ?",
@@ -114,7 +121,17 @@
             "other-com-indigenous-research": "Indigenous Research Methodologies",
             "other-com-youth-participatory": "Youth Participatory Action-Research Project",
             "other-com-intellectual-disabilities": "Intellectual Disabilities (ID) Participatory Action Research (Par)",
-            "other-com-street-participatory": "Street Participatory Action Research"
+            "other-com-street-participatory": "Street Participatory Action Research",
+            "participatory-monitoring": "Participatory Monitoring",
+            "participatory-mapping": "Participatory Mapping",
+            "participatory-sensing": "Participatory Sensing",
+            "participatory-action-research": "Participatory Action-Research",
+            "participatory-action-design": "Participatory Action Design",
+            "participatory-action-research-approach": "Participatory Action Research Approach",
+            "participatory-action-research-principles": "Participatory Action Research Principles",
+            "collaborative-action-research": "Collaborative and Participatory Action Research",
+            "practice-research": "Practice-Based Research",
+            "practicer-researcher-partnership": "Practitioner-Researcher Partnership"
         },
         "def": {
             "citizen-science": "Le terme « Citizen Science est utilisé comme marqueur de la science participative, pour toute méthode, discipline et contexte confondus. Le terme \"Citizen\" est entendu comme terme générique : toute personne souhaitant s'impliquer pour la cité. La science citoyenne est donc une science qui participe non seulement de la cité mais aussi intègre dans son processus les voix de tous et toutes. Par ailleurs, ce terme est aussi celui qui a été retenu internationalement pour parler des sciences et recherches participatives en anglais. De fait, les articles qui utilisent le terme Citizen Science dans leur indexation sont plus visibles et plus cités. A noter que le terme \"Citizen\" en anglais tend à recouvrir le groupe des habitants légaux, ceux et celles qui ont des papiers et une reconnaissance administrative. Néanmoins, ce n'est jamais sur ce sens là qu'un projet de citizen science se construit. Vous pouvez donc utiliser des dérivés de Citizen science sans crainte de voir votre projet réduit à ce type de public.",
@@ -164,7 +181,17 @@
             "other-com-indigenous-research": "Des termes comme adolescents (\"teenagers\"), famille (\"family\"), enfants (\"children\"), etc. sont parfois accolés à d'autres qualificatifs du projet participatif. ",
             "other-com-youth-participatory": "Des termes comme adolescents (\"teenagers\"), famille (\"family\"), enfants (\"children\"), etc. sont parfois accolés à d'autres qualificatifs du projet participatif. ",
             "other-com-intellectual-disabilities": "Des termes comme adolescents (\"teenagers\"), famille (\"family\"), enfants (\"children\"), etc. sont parfois accolés à d'autres qualificatifs du projet participatif. ",
-            "other-com-street-participatory": "Des termes comme adolescents (\"teenagers\"), famille (\"family\"), enfants (\"children\"), etc. sont parfois accolés à d'autres qualificatifs du projet participatif. h"
+            "other-com-street-participatory": "Des termes comme adolescents (\"teenagers\"), famille (\"family\"), enfants (\"children\"), etc. sont parfois accolés à d'autres qualificatifs du projet participatif. ",
+            "participatory-monitoring": "Si votre projet se fait dans le cadre d'études écologiques, de type observation des espèces ou suivi environnemental, on parlera de monitoring.",
+            "participatory-mapping": "Si votre projet se fait dans le cadre d'études écologiques, de type observation des espèces ou suivi environnemental, on parlera de monitoring.",
+            "participatory-sensing": "Si votre projet se fait dans le cadre d'études écologiques, de type observation des espèces ou suivi environnemental, on parlera de monitoring.",
+            "participatory-action-research": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action. ",
+            "participatory-action-design": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action. ",
+            "participatory-action-research-approach": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action. ",
+            "participatory-action-research-principles": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action. ",
+            "collaborative-action-research": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action.",
+            "practice-research": "Ce type de projet mobilise des connaissances expérientielles.",
+            "practicer-researcher-partnership": "Ce type de projet mobilise des connaissances expérientielles."
         }
     }
 }
