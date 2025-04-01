@@ -74,7 +74,7 @@ const addKeyword = (keyword) => {
             </NuxtPage>
         </div>
         <div class="w-1/2 h-full min-h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
-            <NuxtImg src="/Selection.png"></NuxtImg>
+            <img class="w-1/2" src="/Selection.png"/>
         </div>
     </div>
 </template>
