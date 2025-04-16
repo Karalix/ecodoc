@@ -43,7 +43,7 @@
             "no": "Non"
         },
         "nature": {
-            "question": "À quel de participants votre projet de recherche est-il ouvert ?",
+            "question": "À quelle nature de participants votre projet de recherche est-il ouvert ?",
             "specified": "Des participant·es spécifié·es, identifiés par des caractéristiques particulières",
             "not-specified": "Des participant·es non spécifié·es, le projet est ouvert à qui souhaite participer"
         },
@@ -66,10 +66,33 @@
             "ecology": "Mon projet se fait dans le cadre d'études écologiques, de type observation des espèces ou suivi environnemental",
             "action": "Mon projet se fait dans le cadre d'études en sciences sociales et humaines"
         },
+        "result-three": {
+            "label": "NATURE DU GROUPE",
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
+        },
         "four": {
-            "question": "Quel est le cadre dans lequel ces habitants évoluent ?",
-            "monitoring": "Cadre organisationnel : organisme, sciences de l’éducation, sciences sociales",
-            "research-action-participatory": "Cadre écologique : observation des espèces..."
+            "question": "Qui définit le problème de recherche ?",
+            "researchers": "Chercheur·euses et participant·es définissent le problème ensemble.",
+            "participants": "Le problème de recherche a été défini par des habitant·es/citoyen·nes avant l'implication d'équipes de recherche"
+        },
+        "five": {
+            "question": "Mon projet est-il entièrement organisé par les chercheur·euses et les participant·es ?",
+            "yes": "Oui",
+            "no": "Non"
+        },
+        "six": {
+            "question": "Qui définit le protocole et la méthode de collecte et d'analyse ? ",
+            "with-participants": "Protocole et méthode, sont définis lors d'un travail en commun avec les participants concernés.",
+            "researchers-only": "Protocole, méthode, collecte, traitement, analyse sont définis uniquement par les chercheurs. Les participants participent uniquement à la collecte et éventuellement à l'analyse des données, mais n'ont pas défini les protocoles et ne prennent pas part à l'interprétation des données."
+        },
+        "seven": {
+            "question": "Qui diffuse et dissémine les savoirs produits : écriture, communication, etc. ?",
+            "researchers": "La production de résultats se fait plutôt du côté des scientifiques que des habitants. Les participants sont parfois producteurs de documents, mais cela se fait en parallèle du projet et ces documents sont rarement valorisés. ",
+            "together": "La production se fait ensemble ou en valorisant ce qui est produit par tous : chercheurs comme participants.  le projet insiste sur la production collective de savoirs"
+        },
+        "result-seven": {
+            "label": "NIVEAU DE PARTICIPATION",
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
         }
     },
     "dict": {
@@ -131,7 +154,38 @@
             "participatory-action-research-principles": "Participatory Action Research Principles",
             "collaborative-action-research": "Collaborative and Participatory Action Research",
             "practice-research": "Practice-Based Research",
-            "practicer-researcher-partnership": "Practitioner-Researcher Partnership"
+            "practicer-researcher-partnership": "Practitioner-Researcher Partnership",
+            "cocreated-science" : "Cocreated Science",
+            "codesigned-science" : "Codesigned Science",
+            "collaborative-science" : "Collaborative Science ",
+            "extreme-citizen-science" : "Extreme Citizen Science",
+            "participatory-science-bis" : "Participatory Science",
+            "radical-citizen-science": "Radical Citizen science",
+            "extreme-citizen-science-bis": "Extreme Citizen Science",
+            "community-driven-research": "Community Driven Research ",
+            "community-based-science": "Community Based Science",
+            "community-led-research": "Community-Led Research",
+            "community-based-participatory-research": "Community Based Participatory Research",
+            "participation-science-governance": "Participation and Science Governance",
+            "participatory-science-management": "Participatory and Science Management",
+            "community-academic-research-partnership": "Community-Academic Research Partnership",
+            "community-partnered-participatory-research": "Community-Partnered Participatory Research",
+            "community-university-research-partnerships": "Community-University Research Partnerships",
+            "radical-citizen-science-bis": "Radical Citizen Science",
+            "extreme-citizen-science-ter": "Extreme Citizen Science",
+            "participatory-science-ter": "Participatory Science",
+            "community-driven-research-bis": "Community Driven Research ",
+            "community-based-science-bis": "Community Based Science",
+            "community-led-research-bis": "Community-Led Research",
+            "community-based-participatory-research-bis": "Community Based Participatory Research",
+            "co-created-citizen-science": "Co-created Citizen Science",
+            "co-designed-citizen-science": "Co-designed Citizen Science",
+            "collaborative-science-bis": "Collaborative Science",
+            "collaborative-science-ter": "Collaborative Science",
+            "contributive-science": "Contributive science",
+            "contributory-science": "Contributory Science",
+            "crowdsourcing-science": "Crowdsourcing Science",
+            "distributed": "Distributed Intelligence Science"
         },
         "def": {
             "citizen-science": "Le terme « Citizen Science est utilisé comme marqueur de la science participative, pour toute méthode, discipline et contexte confondus. Le terme \"Citizen\" est entendu comme terme générique : toute personne souhaitant s'impliquer pour la cité. La science citoyenne est donc une science qui participe non seulement de la cité mais aussi intègre dans son processus les voix de tous et toutes. Par ailleurs, ce terme est aussi celui qui a été retenu internationalement pour parler des sciences et recherches participatives en anglais. De fait, les articles qui utilisent le terme Citizen Science dans leur indexation sont plus visibles et plus cités. A noter que le terme \"Citizen\" en anglais tend à recouvrir le groupe des habitants légaux, ceux et celles qui ont des papiers et une reconnaissance administrative. Néanmoins, ce n'est jamais sur ce sens là qu'un projet de citizen science se construit. Vous pouvez donc utiliser des dérivés de Citizen science sans crainte de voir votre projet réduit à ce type de public.",
@@ -191,7 +245,38 @@
             "participatory-action-research-principles": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action. ",
             "collaborative-action-research": "Si votre projet se fait dans le cadre d'études en sciences sociales et humaines, on parlera de recherche action.",
             "practice-research": "Ce type de projet mobilise des connaissances expérientielles.",
-            "practicer-researcher-partnership": "Ce type de projet mobilise des connaissances expérientielles."
+            "practicer-researcher-partnership": "Ce type de projet mobilise des connaissances expérientielles.",
+            "cocreated-science" : "Plusieurs termes sont utilisés pour décrire une science dont le problème (notamment) est posé par les chercheur·euses et les participant·es. Certains de ces termes sont utilisés par des chercheurs ayant construit des échelles de la participation, tels que M. Haklay (2018) ou Wiggins et Crowston (2011). Ces chercheur·euses se distinguent sur les termes utilisés d'où la grande variété de termes proposés ici.",
+            "codesigned-science" : "Plusieurs termes sont utilisés pour décrire une science dont le problème (notamment) est posé par les chercheur·euses et les participant·es. Certains de ces termes sont utilisés par des chercheurs ayant construit des échelles de la participation, tels que M. Haklay (2018) ou Wiggins et Crowston (2011). Ces chercheur·euses se distinguent sur les termes utilisés d'où la grande variété de termes proposés ici.",
+            "collaborative-science" : "Plusieurs termes sont utilisés pour décrire une science dont le problème (notamment) est posé par les chercheur·euses et les participant·es. Certains de ces termes sont utilisés par des chercheurs ayant construit des échelles de la participation, tels que M. Haklay (2018) ou Wiggins et Crowston (2011). Ces chercheur·euses se distinguent sur les termes utilisés d'où la grande variété de termes proposés ici.",
+            "extreme-citizen-science" : "Plusieurs termes sont utilisés pour décrire une science dont le problème (notamment) est posé par les chercheur·euses et les participant·es. Certains de ces termes sont utilisés par des chercheurs ayant construit des échelles de la participation, tels que M. Haklay (2018) ou Wiggins et Crowston (2011). Ces chercheur·euses se distinguent sur les termes utilisés d'où la grande variété de termes proposés ici.",
+            "participatory-science-bis" : "Plusieurs termes sont utilisés pour décrire une science dont le problème (notamment) est posé par les chercheur·euses et les participant·es. Certains de ces termes sont utilisés par des chercheurs ayant construit des échelles de la participation, tels que M. Haklay (2018) ou Wiggins et Crowston (2011). Ces chercheur·euses se distinguent sur les termes utilisés d'où la grande variété de termes proposés ici.",
+            "radical-citizen-science": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "extreme-citizen-science-bis": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "community-driven-research": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "community-based-science": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "community-led-research": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "community-based-participatory-research": "Les termes de Radical ou Extreme Citizen Science sont utilisés pour marquer un changement de paradigme dans une démarche scientifique qui part, non pas des chercheurs, mais des citoyen·nes, et donc futur·es participant·es du projet de recherche. Les termes de community-based/led ou driven marquent le point de départ du projet comme étant d'abord du côté de la communauté avant d'avoir été du côté de la science.",
+            "participation-science-governance": "Deux types de termes seront utiles pour décrire votre projet : 1/ Les termes relatifs au mode de management participatif du projet 2/ Les termes liés au partenariat entre l'université et les participants",
+            "participatory-science-management": "Deux types de termes seront utiles pour décrire votre projet : 1/ Les termes relatifs au mode de management participatif du projet 2/ Les termes liés au partenariat entre l'université et les participants",
+            "community-academic-research-partnership": "Deux types de termes seront utiles pour décrire votre projet : 1/ Les termes relatifs au mode de management participatif du projet 2/ Les termes liés au partenariat entre l'université et les participants",
+            "community-partnered-participatory-research": "Deux types de termes seront utiles pour décrire votre projet : 1/ Les termes relatifs au mode de management participatif du projet 2/ Les termes liés au partenariat entre l'université et les participants",
+            "community-university-research-partnerships": "Deux types de termes seront utiles pour décrire votre projet : 1/ Les termes relatifs au mode de management participatif du projet 2/ Les termes liés au partenariat entre l'université et les participants",
+            "radical-citizen-science-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "extreme-citizen-science-ter": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "participatory-science-ter": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "community-driven-research-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "community-based-science-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "community-led-research-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "community-based-participatory-research-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "co-created-citizen-science": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "co-designed-citizen-science": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "collaborative-science-bis": "Certains termes font une emphase sur la part active des participant·es, d'autres sur la coopération au coeur du projet. On retrouve ici les termes relatifs à la co-construction du problème scientifique.",
+            "collaborative-science-ter": "Les termes retenus ici tournent autour de la notion de contribution et du faible engagement a priori des participant·es. Par faible engagement, on entend un engagement dans un nombre de tâches très limité et très spécifié. Attention, cependant à ne pas penser que l'engagement personnel des participant·es n'est pas fort et que l'apport de ces participants serait de moindre importance que dans les projets de co-création scientifique.",
+            "contributive-science": "Les termes retenus ici tournent autour de la notion de contribution et du faible engagement a priori des participant·es. Par faible engagement, on entend un engagement dans un nombre de tâches très limité et très spécifié. Attention, cependant à ne pas penser que l'engagement personnel des participant·es n'est pas fort et que l'apport de ces participants serait de moindre importance que dans les projets de co-création scientifique.",
+            "contributory-science": "Les termes retenus ici tournent autour de la notion de contribution et du faible engagement a priori des participant·es. Par faible engagement, on entend un engagement dans un nombre de tâches très limité et très spécifié. Attention, cependant à ne pas penser que l'engagement personnel des participant·es n'est pas fort et que l'apport de ces participants serait de moindre importance que dans les projets de co-création scientifique.",
+            "crowdsourcing-science": "Les termes retenus ici tournent autour de la notion de contribution et du faible engagement a priori des participant·es. Par faible engagement, on entend un engagement dans un nombre de tâches très limité et très spécifié. Attention, cependant à ne pas penser que l'engagement personnel des participant·es n'est pas fort et que l'apport de ces participants serait de moindre importance que dans les projets de co-création scientifique.",
+            "distributed": "Les termes retenus ici tournent autour de la notion de contribution et du faible engagement a priori des participant·es. Par faible engagement, on entend un engagement dans un nombre de tâches très limité et très spécifié. Attention, cependant à ne pas penser que l'engagement personnel des participant·es n'est pas fort et que l'apport de ces participants serait de moindre importance que dans les projets de co-création scientifique."
         }
     }
 }

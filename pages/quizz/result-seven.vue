@@ -24,15 +24,15 @@ const addRemoveChosenKeyword = (keyword) => {
 }
 
 onMounted(() => {
-    emit('progress', 3)
+    emit('progress', 4)
 });
 </script>
 
 <template>
     <div class="h-full flex flex-col justify-between">
         <div class="flex flex-col space-y-4">
-            <p class="font-bold text-2xl">{{ $t('quizz.result-two.label') }}</p>
-            <p class="font-bold text-base">{{ $t('quizz.result-two.sub-label') }}</p>
+            <p class="font-bold text-2xl">{{ $t('quizz.result-seven.label') }}</p>
+            <p class="font-bold text-base">{{ $t('quizz.result-seven.sub-label') }}</p>
             <div class="flex flex-row flex-wrap">
                 <div    v-for="keyw of currentkeywords"
                         :key="keyw"
