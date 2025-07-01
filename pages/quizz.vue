@@ -1,12 +1,15 @@
-<script setup>
+<script setup lang="ts">
+const { t } = useI18n()
 const progress = ref(0)
 
 const keywords = ref([])
+const translatedKeyword = ref(null as string | null)
+const translatedDefinition = ref(null as string | null)
 
-const citizenkeywords = ref([])
-const engagementkeywords = ref([])
-const naturekeywords = ref([])
-const participationkeywords = ref([])
+const citizenkeywords = ref([] as string[])
+const engagementkeywords = ref([] as string[])
+const naturekeywords = ref([] as string[])
+const participationkeywords = ref([] as string[])
 
 const workingArray = computed(() => {
     switch (progress.value) {
@@ -23,7 +26,7 @@ const workingArray = computed(() => {
     }
 })
 
-const addKeyword = (keyword) => {
+const addKeyword = (keyword: string) => {
     let workingArray = citizenkeywords.value
     switch (progress.value) {
         case 1:
@@ -54,6 +57,18 @@ const addKeyword = (keyword) => {
     workingArray.push(keyword)
 }
 
+const highlightKeyword = (keyword: string) => {
+    if (keyword != null) {
+        translatedKeyword.value = t(`dict.ln.${keyword}`)
+        translatedDefinition.value = t(`dict.def.${keyword}`)
+    } else {
+        translatedKeyword.value = null
+        translatedDefinition.value = null
+        return
+    }
+}
+
+
 </script>
 
 <template>
@@ -63,18 +78,23 @@ const addKeyword = (keyword) => {
             <ProgressBar :progress="progress" :total="5" ></ProgressBar>
             <p class="text-gray-300">{{ $t('quizz.intro-text') }}</p>
             <NuxtPage
-                :transition="{
-                    name: 'slide-fade'
-                }"
+                :transition="{name: 'slide-fade'}"
                 :page-key="route => route.fullPath"
                 :keywords="keywords"
                 :currentkeywords="workingArray"
+                @highlight="highlightKeyword"
                 @keyword="addKeyword"
                 @progress="value => progress = value">
             </NuxtPage>
         </div>
         <div class="w-1/2 h-full min-h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
-            <img class="w-1/2" src="/Selection.png"/>
+            <Transition >
+                <img v-if="!translatedKeyword" class="w-1/2 mt-[30%] transition-opacity" src="/Selection.png"/>
+                <div v-else class="mt-12 mx-auto px-8 max-w-lg transition-opacity">
+                    <h2 class="text-xl sm:text-3xl font-bold">{{ translatedKeyword }}</h2>
+                    <p class="mt-2">{{ translatedDefinition }}</p>
+                </div>
+            </Transition>
         </div>
     </div>
 </template>
@@ -94,6 +114,19 @@ html,body, #__nuxt, #__layout{
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   transform: translateX(20px);
+  opacity: 0;
+}
+
+.v-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-leave-active {
+    transition: none;
+}
+
+.v-enter-from,
+.v-leave-to {
   opacity: 0;
 }
 </style>

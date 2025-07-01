@@ -50,25 +50,25 @@ function foldMenu () {
         <NuxtPage />
         <div class="h-16 w-full bg-neutral-200"></div>
         <div id="partners" class="py-16 px-16 md:px-28">
-            <h2 class="text-primary text-5xl font-bold">{{ $t('home.partners') }}</h2>
-            <p class="text-grey text-2xl mt-6 max-w-lg">{{ $t('home.partners-text') }}</p>
+            <h2 class="text-primary text-3xl sm:text-5xl font-bold">{{ $t('home.partners') }}</h2>
+            <p class="text-grey text-xl sm:text-2xl mt-6 max-w-lg">{{ $t('home.partners-text') }}</p>
             <div class="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 gap-4 mt-12">
                 <div class="col-span-2 flex flex-row space-x-8">
-                    <a target="_blank" href="https://www.u-bordeaux.fr/universite/notre-strategie/projets-institutionnels/act-pour-un-campus-experimental"><img class="max-h-24 max-w-[180px]" src="/france_2030.jpg" /></a>
-                    <div class="w-full text-neutral-500 text-sm">
+                    <a target="_blank" href="https://www.u-bordeaux.fr/universite/notre-strategie/projets-institutionnels/act-pour-un-campus-experimental"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/france_2030.jpg" /></a>
+                    <div class="w-24  sm:w-full text-neutral-500 text-xs sm:text-sm">
                         {{ $t('home.anr-financing') }}
                     </div>
                 </div>
-                <div><a target="_blank" href="https://www.u-bordeaux.fr/recherche/science-et-societe"><img class="max-h-24 max-w-[180px]" src="/science_societe.png" /></a></div>
-                <div><a target="_blank" href="https://www.u-bordeaux.fr/"><img class="max-h-24 max-w-[180px]" src="/univ_bordeaux.png" /></a></div>
-                <div><a target="_blank" href="http://weburfist.univ-bordeaux.fr/"><img class="max-h-24 max-w-[180px]" src="/urfist.png" /></a></div>
-                <div><a target="_blank" href="https://www.inria.fr/fr"><img class="max-h-24 max-w-[180px]" src="/inria.png" /></a></div>
-                <div><a target="_blank" href="https://www.ville-floirac33.fr/"><img class="max-h-24 max-w-[180px]" src="/floirac.jpg" /></a></div>
-                <div><a target="_blank" href="https://www.inrae.fr/"><img class="max-h-24 max-w-[180px]" src="/inrae.jpg" /></a></div>
-                <div><a target="_blank" href="https://www.villavalmont.com/"><img class="max-h-24 max-w-[180px]" src="/valmont.png" /></a></div>
-                <div><a target="_blank" href="https://www.centreemiledurkheim.fr/"><img class="max-h-24 max-w-[180px]" src="/durkheim.jpg" /></a></div>
-                <div><a target="_blank" href="https://www.helloasso.com/associations/streetdefrecords"><img class="max-h-24 max-w-[180px]" src="/records.png" /></a></div>
-                <div><a target="_blank" href="https://ville-ares.fr/"><img class="max-h-24 max-w-[180px]" src="/ares.jpg" /></a></div>
+                <div><a target="_blank" href="https://www.u-bordeaux.fr/recherche/science-et-societe"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/science_societe.png" /></a></div>
+                <div><a target="_blank" href="https://www.u-bordeaux.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/univ_bordeaux.png" /></a></div>
+                <div><a target="_blank" href="http://weburfist.univ-bordeaux.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/urfist.png" /></a></div>
+                <div><a target="_blank" href="https://www.inria.fr/fr"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/inria.png" /></a></div>
+                <div><a target="_blank" href="https://www.ville-floirac33.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/floirac.jpg" /></a></div>
+                <div><a target="_blank" href="https://www.inrae.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/inrae.jpg" /></a></div>
+                <div><a target="_blank" href="https://www.villavalmont.com/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/valmont.png" /></a></div>
+                <div><a target="_blank" href="https://www.centreemiledurkheim.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/durkheim.jpg" /></a></div>
+                <div><a target="_blank" href="https://www.helloasso.com/associations/streetdefrecords"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/records.png" /></a></div>
+                <div><a target="_blank" href="https://ville-ares.fr/"><img class="max-h-24 max-w-[100px] sm:max-w-[180px]" src="/ares.jpg" /></a></div>
             </div>
         </div>
         <div class="h-16 w-full bg-neutral-200"></div>

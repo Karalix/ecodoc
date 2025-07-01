@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-const emit = defineEmits(['progress', 'chosenKeywords'])
+const emit = defineEmits(['progress', 'chosenKeywords', 'highlight'])
 
 defineProps({
     keywords: {
@@ -37,7 +37,8 @@ onMounted(() => {
                 <div    v-for="keyw of currentkeywords"
                         :key="keyw"
                         class="tooltip mr-2"
-                        :data-tip="$t(`dict.def.${keyw}`)">
+                        @mouseenter="$emit('highlight', keyw)"
+                        @mouseleave="$emit('highlight', null)">
                     <div 
                         class="rounded border py-2 px-3 mt-3 cursor-pointer border-grey-200"
                         :class="{'border-primary': chosenKeywords.includes(keyw)}"
