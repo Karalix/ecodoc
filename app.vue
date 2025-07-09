@@ -74,7 +74,7 @@ function foldMenu () {
         <div class="h-16 w-full bg-neutral-200"></div>
         <div id="footer" class="py-16 px-16 md:px-28 grid gap-8 grid-cls-1 lg:grid-cols-2">
             <div class="flex flex-col">
-                <NuxtImg src="/ecodoc.png" class="w-32" />
+                <img src="/ecodoc.png" class="w-32" />
                 <div class="divider"></div>
                 <div class="font-semibold mb-4">{{ $t('home.contact-us') }}</div>
                 <div class="text-neutral-500"><a href="mailto:raphaelle.bats@u-bordeaux.fr">raphaelle.bats@u-bordeaux.fr</a></div>

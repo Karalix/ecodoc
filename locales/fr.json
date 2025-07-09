@@ -2,7 +2,8 @@
     "misc": {
         "of": "de",
         "back": "Précédent",
-        "next": "Suivant"
+        "next": "Suivant",
+        "download": "Mes résultats"
     },
     "home": {
         "title": "Générateur de mots-clés",
@@ -15,6 +16,13 @@
         "partners-text": "ECODOC est rendu possible par les multiples partenaires académiques, institutionnels et culturels impliqués dans le projet.",
         "anr-financing": "Ce projet a bénéficié d'une aide de l'État gérée par l'Agence Nationale de la Recherche au titre du programme d'Investissement d'Avenir portant la référence ANR-20-IDES-0001",
         "contact-us": "Nous contacter"
+    },
+    "results": {
+        "my-results": "Mes résultats",
+        "citizen-science": "Citizen Science",
+        "engagement": "Engagement",
+        "nature": "Nature du groupe",
+        "participation": "Niveau de participation"
     },
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
