@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-const emit = defineEmits(['progress', 'chosenKeywords', 'highlight'])
+const emit = defineEmits(['progress', 'chosenKeywords', 'highlight', "download"])
 
 defineProps({
     keywords: {
@@ -49,7 +49,7 @@ onMounted(() => {
             </div>
         </div>
         <div class="flex flex-row-reverse justify-between w-full mt-4">
-            <button class="btn bg-primary text-white">{{ $t('misc.download') }}</button>
+            <button @click="$emit('download')" class="btn bg-primary text-white">{{ $t('misc.download') }}</button>
             <a @click="$router.back()" class="btn btn-primary-light text-primary-medium text-base font-normal">{{ $t('misc.back') }}</a>
         </div>
     </div>

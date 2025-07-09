@@ -68,13 +68,16 @@ const highlightKeyword = (keyword: string) => {
     }
 }
 
+const download = (): void => {
+    print()
+}
 
 </script>
 
 <template>
     <div class="flex flex-col sm:flex-row min-h-[calc(100svh-128px)] bg-[#F8F9F9FF]">
         <!--<div class="absolute text-grey">DEBUG : {{ keywords.join(', ') }}</div>-->
-        <div class=" min-h-[calc(100svh-128px)] px-8 py-4 lg:pl-28 lg:pr-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2 bg-white">
+        <div id="quizz-content" class=" min-h-[calc(100svh-128px)] px-8 py-4 lg:pl-28 lg:pr-16 lg:py-8 flex flex-col space-y-5 lg:space-y-10 w-full lg:w-1/2 bg-white">
             <ProgressBar :progress="progress" :total="4" ></ProgressBar>
             <p class="text-gray-300">{{ $t('quizz.intro-text') }}</p>
             <NuxtPage
@@ -84,10 +87,11 @@ const highlightKeyword = (keyword: string) => {
                 :currentkeywords="workingArray"
                 @highlight="highlightKeyword"
                 @keyword="addKeyword"
-                @progress="value => progress = value">
+                @progress="value => progress = value"
+                @download="download">
             </NuxtPage>
         </div>
-        <div class="w-1/2 h-full min-h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
+        <div id="definition-content" class="w-1/2 h-full min-h-[calc(100svh-128px)] hidden lg:flex justify-center items-center bg-[#F8F9F9FF]">
             <Transition >
                 <img v-if="!translatedKeyword" class="w-1/2 mt-[30%] transition-opacity" src="/Selection.png"/>
                 <div v-else class="mt-12 relative mx-auto p-8 max-w-lg transition-opacity bg-primary text-white">
@@ -97,7 +101,7 @@ const highlightKeyword = (keyword: string) => {
                 </div>
             </Transition>
         </div>
-        <div class="sm:hidden px-4 py-4">
+        <div id="mobile-content" class="sm:hidden px-4 py-4">
             <h2 class="text-xl ml-4 font-bold">{{ $t('results.my-results') }}</h2>
             <h3 v-if="citizenkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
             <div    v-for="keyword in citizenkeywords"
@@ -140,6 +144,40 @@ const highlightKeyword = (keyword: string) => {
                 </div>
             </div>
         </div>
+
+        <div id="downloadable-content" class="">
+            <div class=" px-4 py-4">
+                <h2 class="text-xl font-bold">{{ $t('results.my-results') }}</h2>
+                <h3 v-if="citizenkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
+                <p    v-for="keyword in citizenkeywords"
+                        :key="keyword"
+                        class="mt-2">
+                    <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
+                    {{ $t(`dict.def.${keyword}`) }}
+                </p>
+                <h3 v-if="engagementkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.engagement') }}</h3>
+                <p    v-for="keyword in engagementkeywords"
+                        :key="keyword"
+                        class="mt-2">
+                    <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
+                    {{ $t(`dict.def.${keyword}`) }}
+                </p>
+                <h3 v-if="naturekeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.nature') }}</h3>
+                <p    v-for="keyword in naturekeywords"
+                        :key="keyword"
+                        class="mt-2">
+                    <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
+                    {{ $t(`dict.def.${keyword}`) }}
+                </p>
+                <h3 v-if="participationkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.participation') }}</h3>
+                <p    v-for="keyword in participationkeywords"
+                        :key="keyword"
+                        class="mt-2">
+                    <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
+                    {{ $t(`dict.def.${keyword}`) }}
+                </p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -149,6 +187,34 @@ html,body, #__nuxt, #__layout{
   min-width: 100%!important;
   height:100%!important;
   width: 100%!important;
+}
+
+#downloadable-content {
+    /* Take element out of layout flow */
+    position: absolute;
+    /* Hide it from the user */
+    z-index: -1;
+    opacity: 0;
+    /* Give it a defined size for consistent PDF output */
+    width: 210mm; /* A4 width */
+    top: 0;
+    left: 0;
+}
+
+@media print {
+  #quizz-content, #definition-content, #result-content, #partners, #footer, nav {
+    display: none !important;
+  }
+  #downloadable-content {
+    display: block !important;
+    z-index: 20 !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+    page-break-after: always !important;
+    color: black;
+  }
 }
 
 .slide-fade-enter-active {
