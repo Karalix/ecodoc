@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const progress = ref(0)
+const store = useKeywordsStore()
 
 const keywords = ref([])
 const translatedKeyword = ref(null as string | null)
@@ -103,8 +104,8 @@ const download = (): void => {
         </div>
         <div id="mobile-content" class="sm:hidden px-4 py-4">
             <h2 class="text-xl ml-4 font-bold">{{ $t('results.my-results') }}</h2>
-            <h3 v-if="citizenkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
-            <div    v-for="keyword in citizenkeywords"
+            <h3 v-if="store.citizenkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
+            <div    v-for="keyword in store.citizenkeywords"
                     :key="keyword"
                     tabindex="0"
                     class="collapse collapse-arrow bg-base-200 mt-2">
@@ -113,8 +114,8 @@ const download = (): void => {
                     <p>{{ $t(`dict.def.${keyword}`) }}</p>
                 </div>
             </div>
-            <h3 v-if="engagementkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.engagement') }}</h3>
-            <div    v-for="keyword in engagementkeywords"
+            <h3 v-if="store.engagementkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.engagement') }}</h3>
+            <div    v-for="keyword in store.engagementkeywords"
                     :key="keyword"
                     tabindex="0"
                     class="collapse collapse-arrow bg-base-200 mt-2">
@@ -123,8 +124,8 @@ const download = (): void => {
                     <p>{{ $t(`dict.def.${keyword}`) }}</p>
                 </div>
             </div>
-            <h3 v-if="naturekeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.nature') }}</h3>
-            <div    v-for="keyword in naturekeywords"
+            <h3 v-if="store.naturekeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.nature') }}</h3>
+            <div    v-for="keyword in store.naturekeywords"
                     :key="keyword"
                     tabindex="0"
                     class="collapse collapse-arrow bg-base-200 mt-2">
@@ -133,8 +134,8 @@ const download = (): void => {
                     <p>{{ $t(`dict.def.${keyword}`) }}</p>
                 </div>
             </div>
-            <h3 v-if="participationkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.participation') }}</h3>
-            <div    v-for="keyword in participationkeywords"
+            <h3 v-if="store.participationkeywords.length > 0" class="text-lg ml-4 font-bold mt-4">{{ $t('results.participation') }}</h3>
+            <div    v-for="keyword in store.participationkeywords"
                     :key="keyword"
                     tabindex="0"
                     class="collapse collapse-arrow bg-base-200 mt-2">

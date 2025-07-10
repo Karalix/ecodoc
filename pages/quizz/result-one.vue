@@ -13,13 +13,13 @@ defineProps({
     }
 })
 
-const chosenKeywords = ref([])
+const store = useKeywordsStore()
 
 const addRemoveChosenKeyword = (keyword) => {
-    if (chosenKeywords.value.includes(keyword)) {
-        chosenKeywords.value = chosenKeywords.value.filter(k => k !== keyword)
+    if (store.citizenkeywords.includes(keyword)) {
+        store.citizenkeywords = store.citizenkeywords.filter(k => k !== keyword)
     } else {
-        chosenKeywords.value.push(keyword)
+        store.citizenkeywords.push(keyword)
     }
 }
 
@@ -41,7 +41,7 @@ onMounted(() => {
                         @mouseleave="$emit('highlight', null)">
                     <div 
                         class="rounded border py-2 px-3 mt-3 cursor-pointer border-grey-200"
-                        :class="{'border-primary': chosenKeywords.includes(keyw)}"
+                        :class="{'border-primary': store.citizenkeywords.includes(keyw)}"
                         @click="addRemoveChosenKeyword(keyw)">
                         {{ $t(`dict.ln.${keyw}`) }}
                     </div>

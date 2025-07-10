@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: false,
   app: {
     head: {
       meta: [
@@ -49,17 +50,12 @@ export default defineNuxtConfig({
       ]
     }
   },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
-    '@nuxt/image',
-    'nuxt-svgo'
-  ],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/image', 'nuxt-svgo', '@pinia/nuxt'],
   i18n: {
     strategy: 'no_prefix',
     locales: [
-      { code: 'en', iso: 'en-US', name: 'English' },
-      { code: 'fr', iso: 'fr-FR', name: 'Français' },
+      { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'fr', iso: 'fr-FR', name: 'Français', file: 'fr.json' },
     ],
   },
 })
