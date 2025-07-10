@@ -36,7 +36,9 @@ onMounted(() => {
             <div class="flex flex-row flex-wrap">
                 <div    v-for="keyw of currentkeywords"
                         :key="keyw"
-                        class="tooltip mr-2"
+                        class="tooltip tooltip-warning tooltip-bottom mr-2 mb-24"
+                        :class="{'tooltip-open': !store.citizenkeywords.includes(keyw)}"
+                        :data-tip="$t(`quizz.result.citizen-science-recommended`)"
                         @mouseenter="$emit('highlight', keyw)"
                         @mouseleave="$emit('highlight', null)">
                     <div 
@@ -54,3 +56,11 @@ onMounted(() => {
         </div>
     </div>
 </template>
+
+<style scoped>
+.tooltip::before {
+    left: 82%;
+    max-width: 17rem;
+}
+
+</style>

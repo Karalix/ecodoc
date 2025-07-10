@@ -23,7 +23,7 @@
         "engagement": "Engagement",
         "nature": "Nature du groupe",
         "participation": "Niveau de participation",
-        "presentation-text": "Voici les mots-clefs que vous avez sélectionnés pour décrire votre publication de science citoyenne. Vous pouvez les utiliser dans votre article ou votre projet et dans vos communications. Vous souhaitez en savoir plus sur la science citoyenne ? Contactez moi, j'ai beaucoup trop de temps libre devant moi : raphaelle@urfist-bordeaux.com"
+        "presentation-text": "Voici les mots-clefs que vous avez sélectionnés pour décrire votre publication de science citoyenne. Vous pouvez les utiliser dans votre article ou votre projet et dans vos communications. Vous souhaitez en savoir plus sur la science citoyenne ? Contactez moi, j'ai beaucoup trop de temps libre devant moi : raphaelle[at]urfist-bordeaux.com"
     },
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
@@ -34,7 +34,8 @@
         },
         "result": {
             "label": "CITIZEN SCIENCE",
-            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication"
+            "sub-label": "Cliquez sur les mots-clés qui vous intéressent pour les ajouter à votre publication",
+            "citizen-science-recommended": "Ajoutez-le ! En lien avec des taux de citation important, le terme « Citizen Science » est recommandé pour décrire votre publication."
         },
         "two": {
             "question": "Quel engagement souhaitez-vous mettre en avant ?",
