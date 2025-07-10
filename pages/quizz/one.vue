@@ -1,6 +1,11 @@
 <script setup>
 import { onMounted } from 'vue'
 import ArrowRight from '~/assets/arrow-r.svg'
+const store = useKeywordsStore()
+store.citizenkeywords = []
+store.engagementkeywords = []
+store.naturekeywords = []
+store.participationkeywords = []
 
 const emit = defineEmits(['progress', 'keyword'])
 

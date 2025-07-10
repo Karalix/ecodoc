@@ -148,30 +148,32 @@ const download = (): void => {
 
         <div id="downloadable-content" class="">
             <div class=" px-4 py-4">
+                <img src="/logo-ecodoc.png" class="h-16" />
                 <h2 class="text-xl font-bold">{{ $t('results.my-results') }}</h2>
-                <h3 v-if="citizenkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
-                <p    v-for="keyword in citizenkeywords"
+                <p>{{ $t('results.presentation-text') }}</p>
+                <h3 v-if="store.citizenkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.citizen-science') }}</h3>
+                <p    v-for="keyword in store.citizenkeywords"
                         :key="keyword"
                         class="mt-2">
                     <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
                     {{ $t(`dict.def.${keyword}`) }}
                 </p>
-                <h3 v-if="engagementkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.engagement') }}</h3>
-                <p    v-for="keyword in engagementkeywords"
+                <h3 v-if="store.engagementkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.engagement') }}</h3>
+                <p    v-for="keyword in store.engagementkeywords"
                         :key="keyword"
                         class="mt-2">
                     <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
                     {{ $t(`dict.def.${keyword}`) }}
                 </p>
-                <h3 v-if="naturekeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.nature') }}</h3>
-                <p    v-for="keyword in naturekeywords"
+                <h3 v-if="store.naturekeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.nature') }}</h3>
+                <p    v-for="keyword in store.naturekeywords"
                         :key="keyword"
                         class="mt-2">
                     <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>
                     {{ $t(`dict.def.${keyword}`) }}
                 </p>
-                <h3 v-if="participationkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.participation') }}</h3>
-                <p    v-for="keyword in participationkeywords"
+                <h3 v-if="store.participationkeywords.length > 0" class="text-lg font-bold mt-4">{{ $t('results.participation') }}</h3>
+                <p    v-for="keyword in store.participationkeywords"
                         :key="keyword"
                         class="mt-2">
                     <span class="font-bold">{{ $t(`dict.ln.${keyword}`) }} : </span>

@@ -22,7 +22,8 @@
         "citizen-science": "Citizen Science",
         "engagement": "Engagement",
         "nature": "Nature du groupe",
-        "participation": "Niveau de participation"
+        "participation": "Niveau de participation",
+        "presentation-text": "Voici les mots-clefs que vous avez sélectionnés pour décrire votre publication de science citoyenne. Vous pouvez les utiliser dans votre article ou votre projet et dans vos communications. Vous souhaitez en savoir plus sur la science citoyenne ? Contactez moi, j'ai beaucoup trop de temps libre devant moi : raphaelle@urfist-bordeaux.com"
     },
     "quizz": {
         "intro-text": "Quels sont les mots-clefs les plus adaptés pour décrire ma publication de science citoyenne ?",
